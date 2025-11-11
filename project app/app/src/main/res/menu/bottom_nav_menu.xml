@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_perdido"
+        android:title="Perdido" />
+
+    <item
+        android:id="@+id/nav_central"
+        android:title="Centro" />
+
+    <item
+        android:id="@+id/nav_adoptar"
+        android:title="Adoptar" />
+
+</menu>
