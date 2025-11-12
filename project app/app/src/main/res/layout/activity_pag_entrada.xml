@@ -9,25 +9,28 @@
     tools:context=".pag_entrada">
 
 
+    <!--fin barra de busquedar -->
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="0dp"
         android:layout_height="46dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@id/spinner"
-        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <!--fin barra de busquedar -->
+
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+
         app:layout_constraintBottom_toBottomOf="@id/searchView"
         app:layout_constraintEnd_toStartOf="@id/buttonFiltro"
+
         app:layout_constraintTop_toTopOf="@id/searchView" />
 
     <!-- Boton 1 (noti) -->
@@ -52,6 +55,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/searchView" />
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
 
     <!-- Barra de búsqueda -->
     <ScrollView
@@ -59,7 +71,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
-        app:layout_constraintTop_toTopOf="id/searchView">
+        app:layout_constraintTop_toBottomOf="@id/view">
 
         <LinearLayout
             android:id="@+id/contenedorCartas"
@@ -88,7 +100,7 @@
                     android:src="@drawable/perromaau" />
 
                 <TextView
-                    android:id="@+id/txtNombreProducto"
+                    android:id="@+id/txtNombreAnimal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nombre del producto"
@@ -97,10 +109,10 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/txtPrecioProducto"
+                    android:id="@+id/descripcion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$999.99"
+                    android:text="tiene 4 patas"
                     android:textColor="#388E3C"
                     android:textSize="16sp" />
 
@@ -112,30 +124,19 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
+        style="@style/BottomNavCentered"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        app:itemIconTint="@null"
+        app:itemTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu">
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        app:menu="@menu/bottom_nav_menu" />
 
     <!-- Línea divisoria al centro -->
-    <View
-        android:id="@+id/linea_divisoria"
-        android:layout_width="1dp"
-        android:layout_height="40dp"
-        android:background="#DADADA"
-        app:layout_constraintBottom_toBottomOf="@id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/bottom_navigation" />
 
     <!-- Botón flotante central -->
-
-        android:id="@+id/btnCentral"
-
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

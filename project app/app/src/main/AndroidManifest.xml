@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CP">
         <activity
+            android:name=".formulario_adopcion"
+            android:exported="false" />
+        <activity
             android:name=".pag_entrada"
             android:exported="false" />
         <activity
