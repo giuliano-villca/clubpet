@@ -44,8 +44,7 @@
         android:background="@android:color/transparent"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/noti"
-        android:contentDescription="Notificaciones" />
+        android:src="@drawable/noti"/>
 
     <!-- Botón Perfil -->
     <ImageButton
@@ -55,8 +54,7 @@
         android:layout_marginStart="4dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/logoperfil"
-        android:contentDescription="Perfil" />
+        android:src="@drawable/logoperfil"/>
 
     </LinearLayout>
 
@@ -87,8 +85,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/perromaau"
-                    android:contentDescription="Imagen del animal" />
+                    android:src="@drawable/perromaau"/>
 
             </FrameLayout>
 
@@ -148,7 +145,7 @@
                 android:backgroundTint="#CCCCCC"
                 android:textColor="#000000" />
 
-            <!-- 📝 Descripción -->
+            <!-- descripcion -->
             <TextView
                 android:id="@+id/txtDescripcionTitulo"
                 android:layout_width="match_parent"

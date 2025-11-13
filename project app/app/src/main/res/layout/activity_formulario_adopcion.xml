@@ -8,7 +8,7 @@
     android:background="@color/white"
     tools:context=".formulario_adopcion">
 
-    <!--NAV SUPERIOR -->
+    <!--nav superior -->
     <LinearLayout
         android:id="@+id/navSuperior"
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:src="@drawable/noti"
-            android:contentDescription="Notificaciones" />
+             />
 
         <!-- Botón Perfil -->
         <ImageButton
@@ -57,8 +57,7 @@
             android:layout_marginStart="4dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/logoperfil"
-            android:contentDescription="Perfil" />
+            android:src="@drawable/logoperfil" />
     </LinearLayout>
 
 
@@ -77,17 +76,17 @@
             android:padding="16dp"
             android:gravity="center_horizontal">
 
-            <!-- 📸 Imagen principal -->
+            <!-- foto principal -->
             <ImageView
-                android:id="@+id/imgPrincipal"
+                android:id="@+id/fotoprincipal"
                 android:layout_width="250dp"
                 android:layout_height="250dp"
                 android:background="#EEEEEE"
                 android:src="@drawable/mas"
                 android:scaleType="centerInside"
-                android:contentDescription="Agregar imagen principal" />
+                 />
 
-            <!-- 📷 Miniatura adicional -->
+            <!-- fotos mini -->
             <ImageView
                 android:id="@+id/imgMiniatura"
                 android:layout_width="80dp"
@@ -95,10 +94,9 @@
                 android:layout_marginTop="10dp"
                 android:background="#EEEEEE"
                 android:src="@drawable/mas"
-                android:scaleType="centerInside"
-                android:contentDescription="Agregar imagen secundaria" />
+                android:scaleType="centerInside"/>
 
-            <!-- 🐶 Nombre -->
+            <!-- nombre -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -239,7 +237,7 @@
     </ScrollView>
 
 
-    <!-- BARRA INFERIOR -->
+    <!-- nav inferior -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="0dp"

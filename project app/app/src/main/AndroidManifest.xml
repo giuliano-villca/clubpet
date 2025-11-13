@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CP">
         <activity
+            android:name=".registro_usuario"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
             android:name=".detalle_animal"
             android:exported="false" />
         <activity
