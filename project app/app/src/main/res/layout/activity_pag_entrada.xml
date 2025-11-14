@@ -91,6 +91,7 @@
 
             <!-- carta -->
             <LinearLayout
+                android:id="@+id/cardAnimal1"
                 android:layout_width="160dp"
                 android:layout_height="240dp"
                 android:layout_margin="8dp"
