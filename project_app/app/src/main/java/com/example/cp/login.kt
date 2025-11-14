@@ -71,7 +71,7 @@ class login : AppCompatActivity() {
     // ----- Enviar datos al login.php -----
     private fun enviarLogin(email: String, contraseña: String): String {
         return try {
-            val url = URL("https://TU_DOMINIO/login.php")  // <- cámbialo por tu URL real
+            val url = URL("https://TU_DOMINIO/env.php")  // <- cámbialo por tu URL real
             val conn = url.openConnection() as HttpURLConnection
 
             conn.requestMethod = "POST"
